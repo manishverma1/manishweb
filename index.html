@@ -38,23 +38,29 @@
             transition: all 0.3s ease;
         }
 
+        /* Enhanced Header */
         header {
-            background: var(--primary);
+            background: linear-gradient(135deg, #1f6fb2, #ffdd57); /* Gradient background */
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px; /* Increased padding for a bigger header */
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 4px 15px var(--shadow); /* Subtle shadow for depth */
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: bold; /* Bold text for more impact */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
         }
 
         header p {
             margin: 10px 0;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
         header a {
@@ -62,6 +68,11 @@
             text-decoration: none;
             margin: 0 10px;
             font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: white;
         }
 
         .container {
@@ -99,11 +110,12 @@
             text-decoration: none;
             margin-top: 10px;
             font-weight: 500;
-            transition: transform 0.2s;
+            transition: transform 0.2s, background-color 0.3s ease;
         }
 
         .btn:hover {
             transform: scale(1.05);
+            background-color: #1f6fb2;
         }
 
         /* Dark Mode Toggle Button */
@@ -132,7 +144,10 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
             }
             .container {
                 padding: 20px;
@@ -149,7 +164,7 @@
     <!-- Dark Mode Toggle Button -->
     <div class="toggle" onclick="toggleDarkMode()">🌙 Dark Mode</div>
 
-    <!-- Header Section with Personal Information and Navigation Links -->
+    <!-- Enhanced Header Section with Personal Information and Navigation Links -->
     <header>
         <h1>Manish Verma</h1>
         <p>DevOps Specialist | Linux & Automation Engineer</p>
@@ -208,21 +223,6 @@
                 <li>One-touch SAP HANA HSR configuration</li>
                 <li>Fully automated SAP HANA Pacemaker cluster installation on <strong>Red Hat HA with fencing</strong></li>
                 <li>Automation of backup solutions including <strong>DDBOOST</strong> and <strong>PPDM</strong></li>
-            </ul>
-        </div>
-
-        <!-- Testimonials Section -->
-        <div class="card">
-            <h2>What Clients Say</h2>
-            <p>"Manish is an excellent DevOps engineer who consistently delivers high-quality work with a great attitude." - John Doe, Senior DevOps Engineer</p>
-        </div>
-
-        <!-- Portfolio/Project Section -->
-        <div class="card">
-            <h2>Highlighted Projects</h2>
-            <ul>
-                <li><a href="https://github.com/username/project1" target="_blank">Project 1</a></li>
-                <li><a href="https://github.com/username/project2" target="_blank">Project 2</a></li>
             </ul>
         </div>
     </div>
