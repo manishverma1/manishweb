@@ -38,28 +38,28 @@
             transition: all 0.3s ease;
         }
 
-        /* Enhanced Header */
+        /* Professional Header */
         header {
-            background: linear-gradient(135deg, #1f6fb2, #ffdd57); /* Gradient background */
+            background: #34495e; /* Solid professional dark gray-blue */
             color: white;
-            padding: 80px 20px; /* Increased padding for a bigger header */
+            padding: 30px 20px; /* Reduced padding for a smaller box */
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 15px var(--shadow); /* Subtle shadow for depth */
+            box-shadow: 0 4px 10px var(--shadow); /* Light shadow for depth */
+            border-bottom: 4px solid #1f6fb2; /* Bottom border for contrast */
         }
 
         header h1 {
             margin: 0;
-            font-size: 3rem;
-            font-weight: bold; /* Bold text for more impact */
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+            font-size: 2.5rem; /* Adjusted font size */
+            font-weight: bold;
         }
 
         header p {
             margin: 10px 0;
-            font-size: 1.2rem;
+            font-size: 1rem; /* Slightly smaller font for a balanced look */
             font-weight: 500;
         }
 
@@ -144,100 +144,13 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             header p {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             .container {
                 padding: 20px;
             }
             .card {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <!-- Dark Mode Toggle Button -->
-    <div class="toggle" onclick="toggleDarkMode()">🌙 Dark Mode</div>
-
-    <!-- Enhanced Header Section with Personal Information and Navigation Links -->
-    <header>
-        <h1>Manish Verma</h1>
-        <p>DevOps Specialist | Linux & Automation Engineer</p>
-        <p>
-            <a href="mailto:2manishverma@gmail.com">Email</a> |
-            <a href="tel:+14632182808">Call</a> |
-            <a href="https://www.linkedin.com/in/manish-verma-83321b16/" target="_blank">LinkedIn</a>
-        </p>
-    </header>
-
-    <div class="container">
-        <!-- Professional Summary Section -->
-        <div class="card">
-            <h2>Professional Summary</h2>
-            <p>
-                DevOps Specialist and Linux Automation Engineer with 14+ years of experience
-                managing large-scale hybrid cloud and SAP environments. Expert in automation-first
-                delivery using Ansible, Infrastructure as Code, CI/CD pipelines, and highly
-                available Red Hat and AWS architectures.
-            </p>
-            <a class="btn" href="Manish_Verma_DevOps_Resume.pdf" target="_blank">
-                📄 Download Resume (PDF)
-            </a>
-        </div>
-
-        <!-- Core Skills Section -->
-        <div class="card">
-            <h2>Core Skills</h2>
-            <ul>
-                <li>Red Hat Linux (RHEL 6–9)</li>
-                <li>Ansible & Ansible Tower</li>
-                <li>AWS & Hybrid Cloud</li>
-                <li>Terraform (Infrastructure as Code)</li>
-                <li>CI/CD (GitHub Actions)</li>
-                <li>Kubernetes & Containers</li>
-                <li>Monitoring, Security & Compliance</li>
-            </ul>
-        </div>
-
-        <!-- Automation Highlights Section -->
-        <div class="card">
-            <h2>Automation Highlights</h2>
-            <ul>
-                <li>Automation-first design across SAP, Linux, and cloud platforms</li>
-                <li>Reduced manual effort, operational risk, and downtime</li>
-                <li>One-touch, repeatable, and auditable deployments</li>
-            </ul>
-        </div>
-
-        <!-- SAP Environment Automations Section -->
-        <div class="card">
-            <h2>SAP Environment Automations</h2>
-            <ul>
-                <li>Fully automated SAP build and qualification pipelines</li>
-                <li>Automated SAP HANA installation and post-install configuration</li>
-                <li>One-touch SAP HANA HSR configuration</li>
-                <li>Fully automated SAP HANA Pacemaker cluster installation on <strong>Red Hat HA with fencing</strong></li>
-                <li>Automation of backup solutions including <strong>DDBOOST</strong> and <strong>PPDM</strong></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        © 2025 Manish Verma | DevOps & Linux Automation Engineer
-    </footer>
-
-    <script>
-        // Toggle Dark Mode Function
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark");
-        }
-    </script>
-</body>
-
-</html>
+                margin-
