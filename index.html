@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Manish Verma - DevOps & Automation Engineer | Specializing in Red Hat, AWS, SAP, and Automation.">
+    <meta name="keywords" content="DevOps, Automation, Red Hat, Linux, AWS, SAP, Terraform, Ansible">
+    <title>Manish Verma | DevOps & Automation Engineer</title>
+
+    <style>
+        /* Default (Light) Mode Colors */
+        :root {
+            --bg: #f4f7fb;
+            --text: #2c3e50;
+            --card: #ffffff;
+            --primary: #0f4c81;
+            --accent: #ffdd57;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark Mode Colors */
+        body.dark {
+            --bg: #0e1117;
+            --text: #e6edf3;
+            --card: #161b22;
+            --primary: #1f6fb2;
+            --accent: #f1c40f;
+            --shadow: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Global Styles */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            transition: all 0.3s ease;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0;
+        }
+
+        header a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        /* Card Styles for Sections */
+        .card {
+            background: var(--card);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px var(--shadow);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--primary);
+            padding-left: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Dark Mode Toggle Button */
+        .toggle {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            background: var(--card);
+            border-radius: 30px;
+            padding: 6px 14px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 20px;
+            }
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Dark Mode Toggle Button -->
+    <div class="toggle" onclick="toggleDarkMode()">🌙 Dark Mode</div>
+
+    <!-- Header Section with Personal Information and Navigation Links -->
+    <header>
+        <h1>Manish Verma</h1>
+        <p>DevOps Specialist | Linux & Automation Engineer</p>
+        <p>
+            <a href="mailto:2manishverma@gmail.com">Email</a> |
+            <a href="tel:+14632182808">Call</a> |
+            <a href="https://www.linkedin.com/in/manish-verma-83321b16/" target="_blank">LinkedIn</a>
+        </p>
+    </header>
+
+    <div class="container">
+        <!-- Professional Summary Section -->
+        <div class="card">
+            <h2>Professional Summary</h2>
+            <p>
+                DevOps Specialist and Linux Automation Engineer with 14+ years of experience
+                managing large-scale hybrid cloud and SAP environments. Expert in automation-first
+                delivery using Ansible, Infrastructure as Code, CI/CD pipelines, and highly
+                available Red Hat and AWS architectures.
+            </p>
+            <a class="btn" href="Manish_Verma_DevOps_Resume.pdf" target="_blank">
+                📄 Download Resume (PDF)
+            </a>
+        </div>
+
+        <!-- Core Skills Section -->
+        <div class="card">
+            <h2>Core Skills</h2>
+            <ul>
+                <li>Red Hat Linux (RHEL 6–9)</li>
+                <li>Ansible & Ansible Tower</li>
+                <li>AWS & Hybrid Cloud</li>
+                <li>Terraform (Infrastructure as Code)</li>
+                <li>CI/CD (GitHub Actions)</li>
+                <li>Kubernetes & Containers</li>
+                <li>Monitoring, Security & Compliance</li>
+            </ul>
+        </div>
+
+        <!-- Automation Highlights Section -->
+        <div class="card">
+            <h2>Automation Highlights</h2>
+            <ul>
+                <li>Automation-first design across SAP, Linux, and cloud platforms</li>
+                <li>Reduced manual effort, operational risk, and downtime</li>
+                <li>One-touch, repeatable, and auditable deployments</li>
+            </ul>
+        </div>
+
+        <!-- SAP Environment Automations Section -->
+        <div class="card">
+            <h2>SAP Environment Automations</h2>
+            <ul>
+                <li>Fully automated SAP build and qualification pipelines</li>
+                <li>Automated SAP HANA installation and post-install configuration</li>
+                <li>One-touch SAP HANA HSR configuration</li>
+                <li>Fully automated SAP HANA Pacemaker cluster installation on <strong>Red Hat HA with fencing</strong></li>
+                <li>Automation of backup solutions including <strong>DDBOOST</strong> and <strong>PPDM</strong></li>
+            </ul>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="card">
+            <h2>What Clients Say</h2>
+            <p>"Manish is an excellent DevOps engineer who consistently delivers high-quality work with a great attitude." - John Doe, Senior DevOps Engineer</p>
+        </div>
+
+        <!-- Portfolio/Project Section -->
+        <div class="card">
+            <h2>Highlighted Projects</h2>
+            <ul>
+                <li><a href="https://github.com/username/project1" target="_blank">Project 1</a></li>
+                <li><a href="https://github.com/username/project2" target="_blank">Project 2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        © 2025 Manish Verma | DevOps & Linux Automation Engineer
+    </footer>
+
+    <script>
+        // Toggle Dark Mode Function
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+
+</html>
